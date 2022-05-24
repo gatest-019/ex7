@@ -31,10 +31,10 @@ jobs:
     name: Download file
     runs-on: ubuntu-latest
     steps:
-      - shell: bash
-        run: |
-         	ls output-log-file
       - name: Download a single artifact
         uses: actions/download-artifact@v3
         with:
           name: output-log-file
+      - shell: bash
+        run: |
+         ls output-log-file
