@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       output1: ${{ steps.step3.outputs.o1 }}
-    steps:
+    steps:   
       - name: setvar
         id: step1
         run: echo "SOMEVAR=hello" >> $GITHUB_ENV	
